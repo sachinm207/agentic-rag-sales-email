@@ -1,0 +1,231 @@
+{
+  "prospects": [
+    {
+      "id": "datapulse",
+      "company": "DataPulse Analytics",
+      "industry": "fintech",
+      "size": "450 employees",
+      "ml_maturity": "intermediate",
+      "pain_points": [
+        "Fraud detection models retrained monthly — too slow for emerging patterns",
+        "Data science team of 12 spending 60% of time on infrastructure instead of modeling",
+        "No standardized model deployment pipeline — each team rolls their own"
+      ],
+      "tech_stack": ["Python", "scikit-learn", "TensorFlow", "AWS SageMaker (limited)", "Snowflake"],
+      "recent_news": "Closed Series C ($85M) in January 2026 with plans to triple ML team headcount",
+      "key_contact": {
+        "name": "Priya Sharma",
+        "title": "VP of Engineering",
+        "email": "priya.sharma@datapulse.example.com"
+      },
+      "description": "DataPulse Analytics provides real-time transaction monitoring and fraud scoring for mid-market banks. Their ML pipeline handles 2M+ transactions daily but retraining cycles lag behind new fraud vectors. The engineering org is growing fast post-Series C and looking to standardize their MLOps stack before the team triples in size."
+    },
+    {
+      "id": "medvault",
+      "company": "MedVault Health",
+      "industry": "healthcare",
+      "size": "1200 employees",
+      "ml_maturity": "early",
+      "pain_points": [
+        "Clinical NLP models stuck in research — no path to production deployment",
+        "HIPAA compliance requirements making ML infrastructure decisions slow",
+        "Single ML engineer supporting 5 different research projects"
+      ],
+      "tech_stack": ["Python", "PyTorch", "on-prem GPU cluster", "Epic FHIR API"],
+      "recent_news": "Hired first Chief AI Officer in November 2025, signaling serious ML investment",
+      "key_contact": {
+        "name": "Dr. James Chen",
+        "title": "Chief AI Officer",
+        "email": "j.chen@medvault.example.com"
+      },
+      "description": "MedVault Health runs a network of 30+ specialty clinics and is sitting on a decade of structured clinical data. Their research team has promising NLP models for clinical note summarization and diagnostic support, but nothing has made it past Jupyter notebooks. The new CAIO hire signals executive buy-in, but they need infrastructure to move from experiments to deployed models."
+    },
+    {
+      "id": "shopstream",
+      "company": "ShopStream",
+      "industry": "retail / e-commerce",
+      "size": "800 employees",
+      "ml_maturity": "advanced",
+      "pain_points": [
+        "Recommendation engine latency spikes during flash sales (p99 hits 800ms)",
+        "Model versioning is manual — rollbacks take hours instead of minutes",
+        "A/B testing new models requires engineering tickets and 2-week lead time"
+      ],
+      "tech_stack": ["Python", "PyTorch", "Kubernetes", "Kubeflow", "Redis", "PostgreSQL"],
+      "recent_news": "Q4 2025 revenue up 40% YoY driven by AI-powered personalization features",
+      "key_contact": {
+        "name": "Marcus Webb",
+        "title": "Director of ML Platform",
+        "email": "m.webb@shopstream.example.com"
+      },
+      "description": "ShopStream operates a mid-market e-commerce platform with 15M monthly active users. Their ML team of 25 has built sophisticated recommendation and search ranking models, but the serving infrastructure can't keep up during peak traffic. They've outgrown Kubeflow and need a platform that handles model versioning, canary deployments, and auto-scaling without the team maintaining it all."
+    },
+    {
+      "id": "precisionworks",
+      "company": "PrecisionWorks Manufacturing",
+      "industry": "manufacturing",
+      "size": "3500 employees",
+      "ml_maturity": "early",
+      "pain_points": [
+        "Predictive maintenance models exist as Excel spreadsheets, not deployed systems",
+        "Factory floor sensor data collected but unused — 50TB sitting in S3",
+        "No ML team — quality engineers doing data science part-time"
+      ],
+      "tech_stack": ["MATLAB", "Excel", "AWS S3", "Siemens MindSphere"],
+      "recent_news": "Board approved $5M digital transformation budget for 2026, specifically mentioning AI/ML",
+      "key_contact": {
+        "name": "Angela Torres",
+        "title": "Director of Digital Transformation",
+        "email": "a.torres@precisionworks.example.com"
+      },
+      "description": "PrecisionWorks runs 8 manufacturing plants producing precision components for aerospace and automotive. They have 2 years of sensor data from 200+ machines but no real ML capability. Quality engineers built some predictive models in Excel that actually work, which convinced the board to fund a proper ML initiative. They need a platform that non-ML-engineers can use to deploy and monitor models."
+    },
+    {
+      "id": "clearpath",
+      "company": "ClearPath Insurance",
+      "industry": "insurance",
+      "size": "2000 employees",
+      "ml_maturity": "intermediate",
+      "pain_points": [
+        "Claims processing models have 15% false positive rate — too many manual reviews",
+        "Regulatory requirements demand model explainability but current tools are inadequate",
+        "Model drift detection is reactive — they find out models degraded from business metrics, not monitoring"
+      ],
+      "tech_stack": ["Python", "XGBoost", "MLflow", "Databricks", "Azure (migrating to AWS)"],
+      "recent_news": "Announced AWS migration in December 2025, moving all workloads from Azure by Q3 2026",
+      "key_contact": {
+        "name": "Robert Kimball",
+        "title": "Head of Data Science",
+        "email": "r.kimball@clearpath.example.com"
+      },
+      "description": "ClearPath Insurance processes 500K claims annually using ML-based fraud detection and automated routing. Their models work but lack the explainability regulators are demanding. They're in the middle of a cloud migration from Azure to AWS, which is the perfect time to re-platform their ML stack. MLflow on Databricks has been their primary tool, but they're open to AWS-native alternatives."
+    },
+    {
+      "id": "gridwise",
+      "company": "GridWise Energy",
+      "industry": "energy / utilities",
+      "size": "600 employees",
+      "ml_maturity": "intermediate",
+      "pain_points": [
+        "Demand forecasting models accurate to ±8% but business needs ±3%",
+        "Solar and wind generation prediction models not accounting for microclimate data",
+        "Data pipeline from 10K+ smart meters breaks weekly"
+      ],
+      "tech_stack": ["Python", "TensorFlow", "Apache Kafka", "AWS Glue", "Redshift"],
+      "recent_news": "Won $30M DOE grant for smart grid AI research in October 2025",
+      "key_contact": {
+        "name": "Sarah Okonkwo",
+        "title": "VP of Analytics",
+        "email": "s.okonkwo@gridwise.example.com"
+      },
+      "description": "GridWise manages power distribution for 2M customers across 3 states. They're integrating more renewable sources and need better demand and generation forecasting. Their existing TensorFlow models are decent but plateau'd at ±8% accuracy. The DOE grant gives them budget and mandate to push AI capabilities significantly forward, but their team of 8 data scientists is already stretched thin."
+    },
+    {
+      "id": "lexicai",
+      "company": "LexicAI Legal",
+      "industry": "legal tech",
+      "size": "150 employees",
+      "ml_maturity": "advanced",
+      "pain_points": [
+        "Contract review models trained on US law only — expanding to UK/EU requires retraining",
+        "GPU costs for fine-tuning LLMs eating 40% of cloud budget",
+        "No way to A/B test prompt strategies in production"
+      ],
+      "tech_stack": ["Python", "Hugging Face Transformers", "AWS EC2 (p4d instances)", "LangChain", "Pinecone"],
+      "recent_news": "Launched GPT-powered contract summarizer in September 2025, hit 10K users in 8 weeks",
+      "key_contact": {
+        "name": "Anika Patel",
+        "title": "CTO",
+        "email": "a.patel@lexicai.example.com"
+      },
+      "description": "LexicAI builds AI tools for corporate legal teams — contract review, clause extraction, risk flagging. They've had early success with LLM-based features but the GPU bill is growing faster than revenue. They fine-tune open-source models on p4d instances, which costs $25K/month. They need a platform that can reduce fine-tuning costs and let them experiment with prompt strategies without redeploying."
+    },
+    {
+      "id": "terravision",
+      "company": "TerraVision Logistics",
+      "industry": "logistics / supply chain",
+      "size": "5000 employees",
+      "ml_maturity": "early",
+      "pain_points": [
+        "Route optimization still rule-based — not using ML despite having GPS data from 2K vehicles",
+        "Demand forecasting done quarterly in spreadsheets by regional managers",
+        "IT department resistant to cloud-based ML — security concerns with shipment data"
+      ],
+      "tech_stack": ["Java", "Oracle DB", "SAP TM", "on-prem servers"],
+      "recent_news": "New CTO joined from Amazon in February 2026, pushing cloud-first strategy",
+      "key_contact": {
+        "name": "David Park",
+        "title": "CTO",
+        "email": "d.park@terravision.example.com"
+      },
+      "description": "TerraVision is a national logistics company with 2000+ delivery vehicles and 50 distribution centers. They have years of GPS, delivery time, and demand data locked in on-prem Oracle databases. The new CTO (ex-Amazon) is pushing aggressively to move to AWS and start using ML for route optimization and demand forecasting. The biggest blocker is the IT security team's concerns about shipment data in the cloud."
+    },
+    {
+      "id": "pixelhealth",
+      "company": "PixelHealth Imaging",
+      "industry": "healthcare / medical imaging",
+      "size": "200 employees",
+      "ml_maturity": "advanced",
+      "pain_points": [
+        "FDA-cleared radiology models need continuous monitoring but no MLOps in place",
+        "Model retraining requires 3 months due to regulatory validation requirements",
+        "Deploying models across 50 hospital sites means managing 50 different environments"
+      ],
+      "tech_stack": ["Python", "PyTorch", "NVIDIA Clara", "Docker", "AWS HealthLake"],
+      "recent_news": "Received FDA 510(k) clearance for lung nodule detection model in December 2025",
+      "key_contact": {
+        "name": "Dr. Lisa Huang",
+        "title": "VP of Engineering",
+        "email": "l.huang@pixelhealth.example.com"
+      },
+      "description": "PixelHealth builds AI-powered radiology tools that are deployed in hospital PACS systems. Their lung nodule detection model just got FDA clearance, which means they now need production-grade MLOps — model versioning, drift detection, audit trails, and multi-site deployment. They're a small team that's been focused on model accuracy, not infrastructure, and they need to scale fast before competitors catch up."
+    }
+  ],
+  "industry_insights": {
+    "fintech": {
+      "trends": ["Real-time ML inference for fraud detection", "Explainable AI for regulatory compliance", "Federated learning for cross-institutional models"],
+      "pain_points": ["Model latency requirements under 100ms", "Audit trails for every prediction", "Data sovereignty across jurisdictions"],
+      "talking_points": ["Reduce fraud detection retraining from months to days", "Built-in model explainability for regulators", "Sub-50ms inference at scale"]
+    },
+    "healthcare": {
+      "trends": ["Clinical NLP for EHR data", "FDA-regulated ML model lifecycle", "Privacy-preserving ML training"],
+      "pain_points": ["HIPAA-compliant ML infrastructure", "Long regulatory approval cycles", "Small labeled datasets"],
+      "talking_points": ["HIPAA-ready deployment pipeline", "Model versioning with full audit history", "Transfer learning to work with small medical datasets"]
+    },
+    "retail / e-commerce": {
+      "trends": ["Real-time personalization at scale", "LLM-powered product search", "Dynamic pricing models"],
+      "pain_points": ["Latency during traffic spikes", "Model version management across regions", "A/B testing infrastructure"],
+      "talking_points": ["Auto-scaling inference to handle flash sales", "One-click model rollback", "Built-in A/B testing for model versions"]
+    },
+    "manufacturing": {
+      "trends": ["Predictive maintenance with IoT data", "Computer vision for quality control", "Digital twins with ML"],
+      "pain_points": ["Bridging OT and IT data systems", "ML skills gap in engineering teams", "Edge deployment for factory floor"],
+      "talking_points": ["No-code model deployment for engineering teams", "Edge-to-cloud model pipeline", "Pre-built templates for predictive maintenance"]
+    },
+    "insurance": {
+      "trends": ["Automated claims processing", "Risk scoring with alternative data", "NLP for policy document analysis"],
+      "pain_points": ["Model explainability for regulators", "Drift detection for underwriting models", "Legacy system integration"],
+      "talking_points": ["Built-in model explainability dashboards", "Automated drift detection and alerting", "REST API integration with any claims system"]
+    },
+    "energy / utilities": {
+      "trends": ["AI-driven demand forecasting", "Renewable energy optimization", "Smart grid anomaly detection"],
+      "pain_points": ["Time-series model accuracy", "Real-time processing from IoT devices", "Model accuracy under distribution shift"],
+      "talking_points": ["Time-series optimized training pipelines", "Streaming inference for IoT data", "Automated retraining on data drift"]
+    },
+    "legal tech": {
+      "trends": ["LLM-powered contract analysis", "Semantic search over case law", "Automated compliance checking"],
+      "pain_points": ["Fine-tuning costs for domain-specific LLMs", "Multi-jurisdiction model management", "Prompt engineering at scale"],
+      "talking_points": ["Managed fine-tuning with cost optimization", "Prompt versioning and A/B testing", "Multi-model routing to cut inference costs"]
+    },
+    "logistics / supply chain": {
+      "trends": ["ML-based route optimization", "Demand forecasting with external signals", "Computer vision for warehouse automation"],
+      "pain_points": ["On-prem to cloud migration for ML", "Real-time optimization with legacy systems", "Data security for shipment information"],
+      "talking_points": ["Secure VPC deployment for sensitive data", "Hybrid cloud support for gradual migration", "Pre-built connectors for SAP and Oracle"]
+    },
+    "healthcare / medical imaging": {
+      "trends": ["FDA-regulated AI model deployment", "Federated learning across hospital sites", "Continuous model monitoring for regulatory compliance"],
+      "pain_points": ["Multi-site model deployment consistency", "Regulatory audit requirements", "Model retraining with small labeled datasets"],
+      "talking_points": ["Regulatory-grade model versioning and audit trails", "Multi-site deployment from single pipeline", "Automated monitoring dashboards for FDA post-market requirements"]
+    }
+  }
+}

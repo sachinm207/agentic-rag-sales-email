@@ -1,0 +1,5 @@
+vector_store.json
+benchmark_results.json
+__pycache__/
+*.pyc
+.env
